@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS `cursillos` (
+  `CODCUR` varchar(2) NOT NULL,
+  `NOMCUR` varchar(25) NOT NULL,
+  `NUMHORAS` int(11) NOT NULL,
+  `FECHA` date NOT NULL,
+  `CODP` varchar(2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `cursillos`
+--
+
+INSERT INTO `cursillos` (`CODCUR`, `NOMCUR`, `NUMHORAS`, `FECHA`, `CODP`) VALUES
+('C1', 'SO', 300, '2016-04-24', 'P1'),
+('C2', 'HW', 150, '2016-03-21', 'P3'),
+('C3', 'HTML', 200, '2015-11-12', 'P1'),
+('C4', 'CONTABILIDAD', 200, '2015-12-12', 'P2'),
+('C5', 'FOL', 200, '2015-12-12', 'P2');
+
+-- --------------------------------------------------------
